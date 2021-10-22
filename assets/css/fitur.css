@@ -1,0 +1,105 @@
+:root {
+    /* Main Theme collor */
+    --theme-collor-orange: rgba(243, 110, 64);
+    --theme-collor-blue: rgba(88, 174, 254);
+    /* Primary collor */
+    --primary-orange-400: rgba(255, 154, 119);
+    --primary-orange-500: rgba(243, 110, 64);
+    --primary-orange-600: rgba(244, 76, 17);
+    --primary-orange-700: rgba(220, 64, 10);
+
+    /* Secondary collor */
+    --secondary-blue-500: rgba(88, 174, 254);
+    --secondary-blue-600: rgba(23, 144, 255);
+    --secondary-blue-700: rgba(0, 118, 227);
+    /* Neutural collor */
+    --neutural-collor-100: rgba(241, 242, 245);
+    --netural-collor-200: rgba(223, 225, 232);
+    --neutural-collor-500: rgba(102, 132, 163);
+    --neutural-collor-600: rgba(70, 92, 115);
+    --neutural-collor-700: rgba(70, 92, 115);
+    --neutural-collor-800: rgba(35, 46, 59);
+
+
+    /* Font weight */
+    --font-thin: 400;
+    --font-regular: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* Body Font */
+    --body-font: 'Poppins', sans-serif;
+
+}
+
+
+body {
+    background-color: var(--netural-collor-200);
+    font-family: var(--body-font);
+
+}
+
+.fitur {
+    padding: 206px 165px;
+}
+
+.fitur__container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 195px;
+    width: 1110px;
+    height: 350px;
+    background: #F36E40;
+    border-radius: 16px;
+    padding: 40px 48px;
+}
+
+.fitur__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 540px;
+    height: 308px;
+    color: #fff;
+}
+
+.fitur__title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    margin-bottom: 32px;
+}
+
+.fitur__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    font-weight: var(--font-thin);
+
+}
+
+.fitur__img {
+    transform: translateY(-121px);
+}
+
+.button__back {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 140px;
+    padding: 10px 0 10px 20px;
+    margin-top: 24px;
+    background-color: var(--primary-orange-400);
+    border-radius: 14px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.button__back:hover {
+    background-color: var(--primary-orange-600);
+    transition: all .4s;
+}
+
+.button__back:hover .back__icon {
+    transform: translateX(-5px);
+    transition: .4s;
+}
